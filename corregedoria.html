@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Corregedoria</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="topbar">
-<h2>Corregedoria</h2>
-<div class="hamburger" onclick="toggleMenu()">☰</div>
+<div id="sidebar" class="sidebar">
+<h2>🏛️ BOPE RP</h2>
+<a href="index.html">Início</a>
+<a href="avisos.html">Avisos</a>
+<a href="editais.html">Editais</a>
+<a href="corregedoria.html">Corregedoria</a>
 </div>
 
-<div id="menu" class="menu">
-<a href="index.html">🏠 Início</a>
-<a href="avisos.html">📢 Avisos</a>
-<a href="editais.html">📄 Editais</a>
-<a href="corregedoria.html">🛡️ Corregedoria</a>
-<a href="denuncias.html">🚨 Denúncias</a>
+<div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+
+<div class="topbar">
+<div class="hamburger" onclick="toggleMenu()">☰</div>
+<h3>Corregedoria</h3>
 </div>
+
+<div class="content">
 
 <div class="card">
-
-<input id="nome" placeholder="Nick do acusado:"
-<input id="nome" placeholder="Nick do acusado:">
-<input id="rg" placeholder="RG Do acusado:">
-<textarea id="motivo" placeholder="Motivo:"></textarea>
-<input id="video" placeholder="Link do vídeo:">
-
-<button onclick="enviar()">Enviar Denúncia</button>
+<input id="nome" placeholder="Seu nick">
+<input id="acusado" placeholder="Acusado">
+<input id="rg" placeholder="RG">
+<textarea id="motivo" placeholder="Motivo"></textarea>
+<input id="video" placeholder="Link do vídeo">
+<button onclick="enviar()">Enviar denúncia</button>
+</div>
 
 </div>
 

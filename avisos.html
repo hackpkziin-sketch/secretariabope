@@ -1,39 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
 <meta charset="UTF-8">
 <title>Avisos</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+<div id="sidebar" class="sidebar">
+<h2>🏛️ BOPE RP</h2>
+<a href="index.html">Início</a>
+<a href="avisos.html">Avisos</a>
+<a href="editais.html">Editais</a>
+<a href="corregedoria.html">Corregedoria</a>
+</div>
+
+<div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+
 <div class="topbar">
-<h2>Avisos</h2>
 <div class="hamburger" onclick="toggleMenu()">☰</div>
+<h3>Avisos</h3>
 </div>
 
-<div id="menu" class="menu">
-<a href="index.html">🏠 Início</a>
-<a href="avisos.html">📢 Avisos</a>
-<a href="editais.html">📄 Editais</a>
-<a href="corregedoria.html">🛡️ Corregedoria</a>
-<a href="denuncias.html">🚨 Denúncias</a>
+<img src="bope.png" class="banner">
+
+<div class="content">
+
+<!-- AVISO IMPORTANTE -->
+<div class="card" style="border-left:5px solid red;">
+🔥 <b>AVISO IMPORTANTE</b><br>
+O recrutamento oficial está aberto. Compareça para avaliação com comportamento adequado.
 </div>
 
-<div class="card">
-<h3>📢 Recrutamento ON</h3>
-<p>Inscrições abertas para ser da corregedoria.</p>
+<!-- SISTEMA -->
+<div class="card" style="border-left:5px solid #38bdf8;">
+📢 <b>Atualização de Sistema</b><br>
+A corregedoria agora exige provas em vídeo para todas denúncias.
 </div>
 
-<div class="card">
-<h3>🚨 Sistema Ativo</h3>
-<p>Denúncias funcionando normalmente.</p>
+<!-- REGRAS -->
+<div class="card" style="border-left:5px solid orange;">
+⚠️ <b>Conduta</b><br>
+Desrespeito a superiores resultará em punição imediata.
 </div>
 
-<div class="card">
-<h3>⚠️ Regra Nova</h3>
-<p>Agora denúncias precisam de vídeo como prova.</p>
+<!-- ATIVIDADE -->
+<div class="card" style="border-left:5px solid green;">
+⏰ <b>Atividade</b><br>
+Membros inativos por mais de 3 dias poderão ser removidos.
+</div>
+
+<!-- TREINAMENTO -->
+<div class="card" style="border-left:5px solid purple;">
+🎯 <b>Treinamento</b><br>
+Treinos obrigatórios serão realizados semanalmente.
+</div>
+
+<!-- OPERAÇÕES -->
+<div class="card" style="border-left:5px solid #0ea5e9;">
+🚔 <b>Operações</b><br>
+Operações especiais serão anunciadas pelo comando.
+</div>
+
+<!-- PROMOÇÕES -->
+<div class="card" style="border-left:5px solid gold;">
+🏆 <b>Promoções</b><br>
+Sistema de promoção atualizado conforme desempenho.
+</div>
+
 </div>
 
 <script src="script.js"></script>
